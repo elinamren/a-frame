@@ -1,0 +1,77 @@
+<html>
+  <html>
+    <head>
+      <script src="https://unpkg.com/aframe@latest"></script>
+    </head>
+    <body>
+      <a-scene fog="type: linear; color: #132254; near: 0; far: 10">
+        <a-sky color="green"></a-sky>
+        <a-plane
+          src="https://cdn.aframe.io/a-painter/images/floor.jpg"
+          rotation="-90 0 0"
+          width="30"
+          height="30"
+        ></a-plane>
+        <a-image
+          position="0 2 -2"
+          src="https://cdn.glitch.com/62ad2894-2a60-4a5c-9b61-b7bb6a5a87e1%2Fefb2507f-a201-4a43-ac90-2a50b9f75827.image.png?v=1620823905688"
+        ></a-image>
+        <a-text
+          value="Hi there, scan, and catch the clues!"
+          color="pink"
+          position="0 1.2 -0.8"
+          width="1"
+          align="center"
+        ></a-text>
+        <a-gltf-model
+          src="out.glb"
+          position="0 0.7 -4"
+          animation-mixer="clip: *;"
+          shadow
+        ></a-gltf-model>
+        <a-gltf-model
+          src="tree.glb"
+          position="0 0.7 -8"
+          animation-mixer="clip: *;"
+          shadow
+          scale="2 2 2"
+        ></a-gltf-model>
+        <a-gltf-model
+          src="tree.glb"
+          position="-3 0.5 0"
+          animation-mixer="clip: *;"
+          shadow
+          scale="3 3 3"
+        ></a-gltf-model>
+        <a-gltf-model
+          src="tree.glb"
+          position="4 0.7 -1"
+          animation-mixer="clip: *;"
+          shadow
+          scale="3 3 3"
+        ></a-gltf-model>
+
+        <a-image
+          position="0 2 -15"
+          src="https://cdn.glitch.com/62ad2894-2a60-4a5c-9b61-b7bb6a5a87e1%2Fpattern-Frame%2089.png?v=1620827921646"
+        ></a-image>
+        <a-image
+          style="z-index: -1"
+          position="2 2 -15"
+          src="https://cdn.glitch.com/62ad2894-2a60-4a5c-9b61-b7bb6a5a87e1%2Fpattern-Frame%2086.png?v=1620807808945"
+        ></a-image>
+
+        <a-image
+          position="-15 2 -8"
+          src="https://cdn.glitch.com/62ad2894-2a60-4a5c-9b61-b7bb6a5a87e1%2Fpattern-Frame%2088.png?v=1620827929818"
+          rotation="0 90 0"
+        ></a-image>
+        <a-image
+          position="-15 2 -10"
+          src="https://cdn.glitch.com/62ad2894-2a60-4a5c-9b61-b7bb6a5a87e1%2Fpattern-Frame%2087.png?v=1620827932986"
+          rotation="0 90 0"
+        ></a-image>
+      </a-scene>
+    </body>
+  </html>
+</html>
